@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="About"
+          android:id="@+id/about_fragement"
+          android:icon="@drawable/about"/>
+    <item android:title="Insert"
+          android:id="@+id/insert_fragment"
+          android:icon="@drawable/insert"/>
+    <item android:title="Browse"
+          android:id="@+id/browse_fragment"
+          android:icon="@drawable/browser"/>
+</menu>

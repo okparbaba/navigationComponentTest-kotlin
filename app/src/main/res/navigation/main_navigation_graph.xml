@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/main_navigation_graph"
+            app:startDestination="@id/about_fragement">
+    <fragment android:id="@+id/about_fragement" android:name="com.softwarefactory.navigationcomponenttest.AboutFragment"
+              android:label="fragment_about" tools:layout="@layout/fragment_about"/>
+    <fragment android:id="@+id/browse_fragment"
+              android:name="com.softwarefactory.navigationcomponenttest.BrowseFragment" android:label="fragment_browse"
+              tools:layout="@layout/fragment_browse"/>
+    <fragment android:id="@+id/insert_fragment"
+              android:name="com.softwarefactory.navigationcomponenttest.InsertFragment" android:label="fragment_insert"
+              tools:layout="@layout/fragment_insert">
+        <action android:id="@+id/next_action" app:destination="@id/secondFragment"/>
+    </fragment>
+    <fragment android:id="@+id/secondFragment" android:name="com.softwarefactory.navigationcomponenttest.SecondFragment"
+              android:label="fragment_second" tools:layout="@layout/fragment_second">
+        <action android:id="@+id/next_action" app:destination="@id/about_fragement"/>
+    </fragment>
+</navigation>
